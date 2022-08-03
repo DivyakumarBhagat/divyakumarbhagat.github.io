@@ -36,7 +36,7 @@ var callable =
 {
 name: "",
 add: function(name){this.name = name;},
-updatebyId: function(id){document.getElementById(id).innerHTML = this.name;},
+updatebyId: function(id=""){document.getElementById(id).innerHTML = this.name;},
 init: function(name,id){this.add(name);this.updatebyId("test");}
 };
 
