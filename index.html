@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="static/components/header.js"></script>
+<script type="text/javascript" src="static/components/blog.js"></script>
+<script type="text/javascript" src="static/components/footer.js"></script>
+<style>
+*{
+	padding:0;
+	margin:0;
+}
+/* Simple reset */
+html, body{
+margin: 0; 
+padding: 0; 
+display: block; 
+color: #3d3d3d; 
+font-family: "Open Sans", sans-serif; 
+font-size: inherit; 
+font-weight: normal; 
+text-decoration: none; 
+line-height: 1; 
+outline: 0; 
+} 
+
+</style>
+</head>
+<body>
+<div id="header"></div>
+<div id="blog"></div>
+<div id="footer"></div>
+<script type = "text/JavaScript">
+var callable =
+{
+name: "",
+add: function(name){this.name = name;},
+updatebyId: function(id){document.getElementById(id).innerHTML = this.name;},
+init: function(name,id){this.add(name);this.updatebyId("test");}
+};
+
+window.onload = function() {
+callable.init(header,"header");
+callable.init(blog,"blog");
+callable.init(footer,"footer");
+};
+</script>
+</body>
+</html>
