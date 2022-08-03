@@ -3,6 +3,11 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<script src="./static/components/header.js"></script>
+<script src="./static/components/blog.js"></script>
+<script src="./static/components/footer.js"></script>
+	
 <style>
 *{
 	padding:0;
@@ -42,9 +47,18 @@ init: function(url,id){this.fet(url);//this.updatebyId("test");
 };
 
 window.onload = function() {
+/*
 callable.init("./static/components/header.html","header");
 callable.init("/static/components/blog.html","blog");
 callable.init("static/components/footer.html","footer");
+*/
+	
+callable.init(header,"header");
+callable.init(blog,"blog");
+callable.init(footer,"footer");
+	
+	
+	
 };
 </script>
 </body>
