@@ -1,5 +1,5 @@
-export const footer =
-`<style>
+export const footer = () => {
+return `<style>
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 /* The footer is fixed to the bottom of the page */
@@ -56,3 +56,4 @@ footer{position: fixed;bottom: 0;}
 </div>
 </footer>
 `;
+};
