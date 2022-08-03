@@ -1,5 +1,5 @@
 
-var blog = () =>
+export const blog = () =>
 `<style>
 
 /* Header/Blog Title */
