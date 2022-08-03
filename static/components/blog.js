@@ -1,6 +1,5 @@
-
-export const blog =
-`<style>
+export const blog = () => {
+return `<style>
 
 /* Header/Blog Title */
 .header {padding: 30px;font-size: 40px;text-align: center;background: white;}
@@ -38,3 +37,4 @@ export const blog =
 	</div>
 </div>
 `;
+};
