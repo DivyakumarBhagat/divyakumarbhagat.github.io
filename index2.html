@@ -5,31 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 *{
-	padding:0;
-	margin:0;
-}
-/* Simple reset */
-html, body{
-margin: 0; 
-padding: 0; 
+padding:0;
+margin:0;
 display: block; 
-color: #3d3d3d; 
-font-family: "Open Sans", sans-serif; 
-font-size: inherit; 
-font-weight: normal; 
-text-decoration: none; 
-line-height: 1; 
-outline: 0; 
-} 
-</style>
-</head>
-<body>
-<div id="header"></div>
-<div id="blog"></div>
-<div id="footer"></div>
-<script type = "text/JavaScript">
-var header = () =>{
-return `<style>
+}
+	
+	
+	/*header*/
+	
 .header {overflow: hidden;background-color: #f1f1f1;padding: 20px 10px;}
 .header a {float: left;color: black;text-align: center;padding: 12px;text-decoration: none;font-size: 18px; line-height: 25px;border-radius: 4px;}
 .header a.logo {font-size: 25px;font-weight: bold;}
@@ -40,13 +23,7 @@ return `<style>
   .header a {float: none;display: block;text-align: left;}
   .header-right {float: none;}
 }
-</style>
-<div class="header"><a href="#default" class="logo">CompanyLogo</a><div class="header-right"><a class="active" href="#home">Home</a><a href="#contact">Contact</a><a href="#about">About</a></div></div>`;
-var blog = () =>{
-return `<style>
-
-/* Header/Blog Title */
-.header {padding: 30px;font-size: 40px;text-align: center;background: white;}
+	/*blog*/
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {float: left;width: 75%;}
@@ -58,30 +35,11 @@ return `<style>
 .card {background-color: white;padding: 20px;margin-top: 20px;}
 /* Clear floats after the columns */
 .row:after {content: "";display: table;clear: both;}
-/* Footer */
-.footer {padding: 20px;text-align: center;background: #ddd;margin-top: 20px;}
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {width: 100%;padding: 0;}
 }
-</style>
-
-
-<div class="header"><h2>Blog Name</h2></div>
-
-<div class="row">
-	<div class="leftcolumn">
-		<div class="card"><h2>TITLE HEADING</h2><h5>Title description, Dec 7, 2017</h5><div class="fakeimg" style="height:200px;">Image</div><p>Some text..</p></div>
-		<div class="card"><h2>TITLE HEADING</h2><h5>Title description, Sep 2, 2017</h5><div class="fakeimg" style="height:200px;">Image</div><p>Some text..</p></div>
-	</div>
-	<div class="rightcolumn">
-		<div class="card"><h2>About Me</h2><div class="fakeimg" style="height:100px;">Image</div><p>Some text about me in culpa qui officia deserunt mollit anim..</p></div>
-		<div class="card"><h3>Popular Post</h3><div class="fakeimg">Image</div><br><div class="fakeimg">Image</div><br><div class="fakeimg">Image</div></div>
-		<div class="card"><h3>Follow Me</h3><p>Some text..</p></div>
-	</div>
-</div>`;
-var footer = () =>{
-return `<style>
+	/*footer*/
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 /* The footer is fixed to the bottom of the page */
@@ -120,7 +78,29 @@ footer{position: fixed;bottom: 0;}
 	.footer-distributed .footer-center i{margin-left: 0;}
 }
 </style>
-<footer class="footer-distributed">
+</head>
+<body>
+<div id="header"></div>
+<div id="blog"></div>
+<div id="footer"></div>
+<script type = "text/JavaScript">
+var header = () =>{
+return `<div class="header"><a href="#default" class="logo">CompanyLogo</a><div class="header-right"><a class="active" href="#home">Home</a><a href="#contact">Contact</a><a href="#about">About</a></div></div>`;
+var blog = () =>{
+return `<div class="header"><h2>Blog Name</h2></div>
+<div class="row">
+	<div class="leftcolumn">
+		<div class="card"><h2>TITLE HEADING</h2><h5>Title description, Dec 7, 2017</h5><div class="fakeimg" style="height:200px;">Image</div><p>Some text..</p></div>
+		<div class="card"><h2>TITLE HEADING</h2><h5>Title description, Sep 2, 2017</h5><div class="fakeimg" style="height:200px;">Image</div><p>Some text..</p></div>
+	</div>
+	<div class="rightcolumn">
+		<div class="card"><h2>About Me</h2><div class="fakeimg" style="height:100px;">Image</div><p>Some text about me in culpa qui officia deserunt mollit anim..</p></div>
+		<div class="card"><h3>Popular Post</h3><div class="fakeimg">Image</div><br><div class="fakeimg">Image</div><br><div class="fakeimg">Image</div></div>
+		<div class="card"><h3>Follow Me</h3><p>Some text..</p></div>
+	</div>
+</div>`;
+var footer = () =>{
+return `<footer class="footer-distributed">
 <div class="footer-left">
 	<img src="img/logo.png"><h3>About<span>Eduonix</span></h3><p class="footer-links"><a href="#">Home</a><a href="#">Blog</a><a href="#">About</a><a href="#">Contact</a></p>
 	<p class="footer-company-name">© 2019 Eduonix Learning Solutions Pvt. Ltd.</p>
