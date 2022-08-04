@@ -43,17 +43,32 @@ fet: function(url){fetch(url).then(res => {return res.text()}).then(data => {thi
 init: function(url,id){this.fet(url);this.updatebyId(id);},		       
 inita: function(met,id){this.add(met);this.updatebyId(id);}
 };
-
+function sanitize(str)
+	{
+		var temp = document.createElement('div');
+		temp.textContent = str;
+		return temp.innerHTML;
+	}
+	
 window.onload = function() {
 /*
 callable.init("./static/components/header.html","header");
 callable.init("/static/components/blog.html","blog");
 callable.init("static/components/footer.html","footer");
 */
-	
+	/*
 callable.inita(header,"header");
 callable.inita(blog,"blog");
 callable.inita(footer,"footer");
+*/
+	
+callable.fet("./static/components/header.html");
+	callable.name = sanitize(callablee.name);
+callable.fet("/static/components/blog.html");
+	callable.name = sanitize(callablee.name);
+callable.fet("static/components/footer.html");
+	callable.name = sanitize(callablee.name);
+	
 	
 	
 	
