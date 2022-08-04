@@ -25,10 +25,19 @@ add: function(name){this.name = name;},
 updatebyId: function(id){if(this.name){document.getElementById(id).innerHTML = this.name;}}
 };
 
-function fet(url)
+async function fet(url)
 	{
-		var resp = fetch(url).then(function(res){return res.text();}).catch(function(err){console.log(err);});
-		return resp;
+		try
+		{
+		var resp = await fetch(url);
+		var txt = await resp.text();
+			return txt;
+		}
+		catch(err)
+		{
+			console.log(err);
+			return "ERROR!";
+		}
 	}
 window.onload = function() {
 callable.add(fet("/static/components/header.html"));
