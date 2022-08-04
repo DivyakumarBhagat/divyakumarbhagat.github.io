@@ -38,42 +38,21 @@ var callable =
 {
 name: "",
 add: function(name){this.name = name;},
-updatebyId: function(id){if(this.name){document.getElementById(id).innerHTML = this.name;}},
-fet: function(url){fetch(url).then(res => {return res.text()}).then(data => {this.add(data)}).catch(error => new Error(error));},
-init: function(url,id){this.fet(url);this.updatebyId(id);},		       
-inita: function(met,id){this.add(met);this.updatebyId(id);}
+updatebyId: function(id){if(this.name){document.getElementById(id).innerHTML = this.name;}}
 };
-function sanitize(str)
+
+function fet(url)
 	{
-		var temp = document.createElement('div');
-		temp.textContent = str;
-		return temp.innerHTML;
+		var resp = fetch(url).then(function(res){return res.text();}).catch(function(err){console.log(err);});
+		return resp;
 	}
-	
 window.onload = function() {
-
-callable.init("./static/components/header.html","header");
-callable.init("/static/components/blog.html","blog");
-callable.init("static/components/footer.html","footer");
-
-	/*
-callable.inita(header,"header");
-callable.inita(blog,"blog");
-callable.inita(footer,"footer");
-*/
-/*	
-callable.fet("./static/components/header.html");
-	callable.name = sanitize(callable.name);
-	callable.updatebyId("header");
-callable.fet("/static/components/blog.html");
-	callable.name = sanitize(callable.name);
-	callable.updatebyId("blog");
-callable.fet("static/components/footer.html");
-	callable.name = sanitize(callable.name);
-	callable.updatebyId("footer");
-	*/
-	
-	
+callable.add(fet(./static/components/header.html));
+callable.updatebyId("header");
+callable.add(fet(./static/components/blog.html));
+callable.updatebyId("blog");
+callable.add(fet(./static/components/footer.html));
+callable.updatebyId("footer");
 	
 };
 </script>
