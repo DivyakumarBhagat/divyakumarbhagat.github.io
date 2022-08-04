@@ -30,8 +30,16 @@ async function fet(url)
 		try
 		{
 		var resp = await fetch(url);
+			if(resp.ok)
+			{
 		var txt = await resp.text();
 			return txt;
+			}
+			else
+			{
+				console.log("ERROR");
+			return "ERROR!";
+			}
 		}
 		catch(err)
 		{
@@ -39,13 +47,18 @@ async function fet(url)
 			return "ERROR!";
 		}
 	}
+function test(url,id)
+	{
+	 fet(url).then(text => {
+		 callable.add(text);
+callable.updatebyId(id);
+    });
+	}
 window.onload = function() {
-callable.add(fet("/static/components/header.html"));
-callable.updatebyId("header");
-callable.add(fet("/static/components/blog.html"));
-callable.updatebyId("blog");
-callable.add(fet("/static/components/footer.html"));
-callable.updatebyId("footer");
+test("/static/components/header.html","header");
+test("/static/components/blog.html","blog");
+test("/static/components/footer.html","footer");
+	
 	
 };
 </script>
