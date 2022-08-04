@@ -3,29 +3,13 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-<script type="module" src="./static/components/header.js"></script>
-<script type="module" src="./static/components/blog.js"></script>
-<script type="module" src="./static/components/footer.js"></script>
+
 	
 <style>
 *{
 	padding:0;
 	margin:0;
 }
-/* Simple reset */
-html, body{
-margin: 0; 
-padding: 0; 
-display: block; 
-color: #3d3d3d; 
-font-family: "Open Sans", sans-serif; 
-font-size: inherit; 
-font-weight: normal; 
-text-decoration: none; 
-line-height: 1; 
-outline: 0; 
-} 
 
 </style>
 </head>
@@ -33,7 +17,7 @@ outline: 0;
 <div id="header"> </div>
 <div id="blog"> </div>
 <div id="footer"> </div>
-<script type="module">
+<script>
 var callable =
 {
 name: "",
@@ -47,11 +31,11 @@ function fet(url)
 		return resp;
 	}
 window.onload = function() {
-callable.add(fet(./static/components/header.html));
+callable.add(fet("/static/components/header.html"));
 callable.updatebyId("header");
-callable.add(fet(./static/components/blog.html));
+callable.add(fet("/static/components/blog.html"));
 callable.updatebyId("blog");
-callable.add(fet(./static/components/footer.html));
+callable.add(fet("/static/components/footer.html"));
 callable.updatebyId("footer");
 	
 };
