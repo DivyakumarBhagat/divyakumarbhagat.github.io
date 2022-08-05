@@ -7,7 +7,7 @@ var callable ={name: "",
 add: function(name){this.name = name;},
 updatebyId: function(id){if(this.name){document.getElementById(id).innerHTML = this.name;}}};
 
-function test(met,id)
+function testa(met,id)
 {
 callable.add(met);
 callable.updatebyId(id);
@@ -15,7 +15,7 @@ callable.updatebyId(id);
 
 window.onload = function()
 { 
-test(header(),"header");
-test(blog(),"blog");
-test(footer(),"footer");
+testa(header(),"header");
+testa(blog(),"blog");
+testa(footer(),"footer");
 };
