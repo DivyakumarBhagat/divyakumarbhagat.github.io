@@ -1,4 +1,4 @@
-export.footer = function() {
+export const footer = function() {
 return `<style>
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
