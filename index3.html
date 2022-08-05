@@ -3,9 +3,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./static/components/header.js"></script>	
-	<script src="./static/components/blog.js"></script>
-	<script src="./static/components/footer.js"></script>
+<!-- *** IMPORTANT: use type="module" here! *** -->
+    <script type="module" src="main.js"></script>
 	
 <style>
 *{
@@ -19,20 +18,5 @@
 <div id="header"> </div>
 <div id="blog"> </div>
 <div id="footer"> </div>
-<script>
-var callable =
-{
-name: "",
-add: function(name){this.name = name;},
-updatebyId: function(id){if(this.name){document.getElementById(id).innerHTML = this.name;}}
-};
-
-	
-window.onload = function() {
-test(header(),"header");
-test(blog(),"blog");
-test(footer(),"footer");
-};
-</script>
 </body>
 </html>
