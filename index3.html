@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+<style>
+*{
+	padding:0;
+	margin:0;
+}
+
+</style>
+</head>
+<body>
+<div id="header"> </div>
+<div id="blog"> </div>
+<div id="footer"> </div>
+<script>
+var callable =
+{
+name: "",
+add: function(name){this.name = name;},
+updatebyId: function(id){if(this.name){document.getElementById(id).innerHTML = this.name;}}
+};
+
+async function fet(url)
+	{
+		try
+		{
+		var resp = await fetch(url);
+			if(resp.ok)
+			{
+		var txt = await resp.text();
+			return txt;
+			}
+			else
+			{
+				console.log("ERROR");
+			return "ERROR!";
+			}
+		}
+		catch(err)
+		{
+			console.log(err);
+			return "ERROR!";
+		}
+	}
+function test(url,id)
+	{
+	 fet(url).then(text => {
+		 callable.add(text);
+callable.updatebyId(id);
+    });
+	}
+window.onload = function() {
+test("/static/components/header.html","header");
+test("/static/components/blog.html","blog");
+test("/static/components/footer.html","footer");
+};
+</script>
+</body>
+</html>
