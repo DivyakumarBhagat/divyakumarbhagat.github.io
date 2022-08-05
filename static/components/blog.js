@@ -1,4 +1,4 @@
-export const blog = () => {
+export.blog = function() {
 return `<style>
 
 /* Header/Blog Title */
