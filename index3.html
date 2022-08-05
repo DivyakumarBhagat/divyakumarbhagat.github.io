@@ -3,7 +3,9 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<script src="./static/components/header.js"></script>	
+	<script src="./static/components/blog.js"></script>
+	<script src="./static/components/footer.js"></script>
 	
 <style>
 *{
@@ -25,39 +27,11 @@ add: function(name){this.name = name;},
 updatebyId: function(id){if(this.name){document.getElementById(id).innerHTML = this.name;}}
 };
 
-async function fet(url)
-	{
-		try
-		{
-		var resp = await fetch(url);
-			if(resp.ok)
-			{
-		var txt = await resp.text();
-			return txt;
-			}
-			else
-			{
-				console.log("ERROR");
-			return "ERROR!";
-			}
-		}
-		catch(err)
-		{
-			console.log(err);
-			return "ERROR!";
-		}
-	}
-function test(url,id)
-	{
-	 fet(url).then(text => {
-		 callable.add(text);
-callable.updatebyId(id);
-    });
 	}
 window.onload = function() {
-test("/static/components/header.html","header");
-test("/static/components/blog.html","blog");
-test("/static/components/footer.html","footer");
+test(header(),"header");
+test(blog(),"blog");
+test(footer(),"footer");
 };
 </script>
 </body>
