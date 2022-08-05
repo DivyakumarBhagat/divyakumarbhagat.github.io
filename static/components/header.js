@@ -1,4 +1,4 @@
-export.header = function() {
+export const header = function() {
 return `<style>
 .header {overflow: hidden;background-color: #f1f1f1;padding: 20px 10px;}
 .header a {float: left;color: black;text-align: center;padding: 12px;text-decoration: none;font-size: 18px; line-height: 25px;border-radius: 4px;}
