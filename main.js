@@ -1,9 +1,10 @@
 "use strict"
-
+/*
 import {header} from "./static/components/header.js"; 
 import {blog} from "./static/components/blog.js"; 
 import {footer} from "./static/components/footer.js"; 
-	
+*/
+import {header, blog, footer} from ".static/components/com.js";
 
 var callable ={name: "",
 add: function(name){this.name = name;},
