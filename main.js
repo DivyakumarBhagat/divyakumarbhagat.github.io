@@ -6,19 +6,22 @@ import {footer} from "./static/components/footer.js";
 */
 import {header, blog, footer} from ".static/components/com.js";
 
-var callable ={name: "",
-add: function(name){this.name = name;},
-updatebyId: function(id){if(this.name){document.getElementById(id).innerHTML = this.name;}}};
+const doc = document;
+const w = window;
 
-function testa(met,id)
+var c ={name: "",
+add: function(name){this.name = name;},
+updatebyId: function(id){if(this.name){doc.getElementById(id).innerHTML = this.name;}}};
+
+function d(met,id)
 {
-callable.add(met);
-callable.updatebyId(id);
+c.add(met);
+c.updatebyId(id);
 }
 
-window.onload = function()
+w.onload = function()
 { 
-testa(header(),"header");
-testa(blog(),"blog");
-testa(footer(),"footer");
+d(header(),"header");
+d(blog(),"blog");
+d(footer(),"footer");
 };
