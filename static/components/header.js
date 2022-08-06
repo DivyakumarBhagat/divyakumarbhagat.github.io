@@ -1,3 +1,4 @@
+"use strict"
 export const header = function() {
 return `<style>
 .header {overflow: hidden;background-color: #f1f1f1;padding: 20px 10px;}
