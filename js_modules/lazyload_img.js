@@ -30,6 +30,10 @@ display:block;
   width:90%;
   max-width: 800px;
   height:auto;
+  
+  //version 2 add
+  
+  aspect-ratio: 16/9;
 }
 
 
@@ -38,6 +42,8 @@ html eg
 
 <div id="imgz">
 <div class="wp">
+  
+  //version 2 remove width n height 
   <img class="im" data-src="http://i.imgur.com/mThaO.jpg" width="260" height="360">
 </div>
   <img class="im" data-src="http://i.imgur.com/DO1kZ.jpg" width="260" height="360">
