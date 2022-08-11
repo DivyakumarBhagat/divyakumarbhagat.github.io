@@ -1,0 +1,33 @@
+quotes formate
+ 
+{
+"quote:author":["Life isn’t about getting and having, it’s about giving and being.","Kevin Kruse"]
+}
+	
+table formate
+{
+"header":["r1","r2"],
+"a":["1","2"],
+"b":["3","4"]
+}
+	  
+nav items
+{
+"nav":[{title:"home", to:"/"},{title:"", to""},{title:"", to""}]
+}	  
+
+
+
+sociallinks:
+{
+linkedin:"",
+github:"",
+fb:""
+}
+
+
+
+
+
+
+
