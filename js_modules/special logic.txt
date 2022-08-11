@@ -1,0 +1,112 @@
+loops n logics in function code
+
+
+
+
+
+
+
+function forloop(value,test,update,body)
+{
+  for(let i = value;test(i);i=update(i))
+    {
+      body(i);
+    }
+}
+function whileloop(value,test,update,body)
+{
+  let i = value;
+  while(test(i))
+    {
+      body(i)
+      i=update(i);
+    }
+}
+
+function dowhileloop(value,test,update,body)
+{
+  let i = value;
+  do{
+      body(i)
+      i=update(i);
+    } while(test(i))
+}
+
+function forinloop(obj,body)
+{
+  for(let i in obj)
+    {
+      body(obj.[i]);
+    }
+}
+function forofloop(obj,body)
+{
+  for(let i of obj)
+    {
+      body(i);
+    }
+}
+  
+function foreachloop(obj,body)
+{
+  obj.forEach((number, index) => {
+    body(number);
+});
+  
+}
+//forloop(3,n=>n>0,n=>n-1,console.log);
+//whileloop(3,n=>n>0,n=>n-1,console.log);
+//dowhileloop(3,n=>n>0,n=>n-1,console.log);
+  
+var arr = ["apple","carrot","dog"];
+//forinloop(arr,console.log);
+//forofloop(arr,console.log);
+//foreachloop(arr,console.log);
+  
+  
+  
+  
+ function logic(value,test,trueupdate,falseupdate)
+  {
+    let i = value;
+   if(test(i))
+     {
+       trueupdate(i,"true");
+     }
+    else
+     {
+       falseupdate(i,"false");
+     }
+  }
+  
+  function shlog(value,test,trueupdate,falseupdate)
+  {
+    let i = value;
+test(i) ? trueupdate(i,"true"): falseupdate(i,"false")
+  }
+  
+
+//logic(3,n=>n>0,console.log,console.log);
+//shlog(-1,n=>n>0,console.log,console.log);
+//shlog(0,n=>n!=0,console.log,console.log);
+//shlog(false,n=>n!=true,console.log,console.log);
+  
+  
+  
+  function val(value,v1,v2)
+  {
+    return value = v1 || v2;
+  }
+  
+  /*
+  let vare ="";
+  var v3 = 45;
+  vare = val(vare,v3,'localhost');
+  console.log(vare);
+  */
+   /*
+  let vare ="";
+  var v3 = false;
+  vare = val(vare,v3,'localhost');
+  console.log(vare);
+  */
