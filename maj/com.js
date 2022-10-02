@@ -8,7 +8,7 @@ function footer() {return `<footer class="footer"><section>${impLinks()}${explor
 
 function execution()
 {
-document.getElementById("header").innerHTML = header();
-document.getElementById("footer").innerHTML = footer();
+document.getElementById("header").outerHTML = header();
+document.getElementById("footer").outerHTML = footer();
 }
 window.addEventListener('load', (event) =>{execution();});
