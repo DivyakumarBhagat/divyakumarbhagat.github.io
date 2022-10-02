@@ -11,7 +11,7 @@ header, .parent {display: flex;align-items: center;}
 
 .header, .footer{background-color:pink;}header * {display: inline;}header li { 2vw;}header li a {color: black;text-decoration: none;}
 
-.bar {display: block;width: 25px;height: 3px; 5px auto;-webkit-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;background-color: #101010;}
+.bar {display: block;width: 35px;height: 5px;margin: 6px auto;-webkit-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;background-color: #101010;}
 
 .lst {max-width: min(max(0px,(100vw - var(--hBreak)) * 1000), 100%);max-height: min(max(0px,(100vw - var(--hBreak)) * 1000),1000px);overflow: hidden;}
 
