@@ -25,7 +25,10 @@ img, picture, video {display: block;max-width: 100%;border: 0;}
 
 
 header, .parent, .footer {width:98vw;}
-header{position:absolute;top:0;left:1vw;background-color:red ;border-bottom: 1px solid pink;height: 85px;}
+.content,.sidebar{height:100vh;}
+footer{height: 300px;}
+
+header{background-color:red ;border-bottom: 1px solid pink;height: 85px;}
 section ,nav {width: 90vw;margin: auto;display: flex;align-items: center;justify-content: space-between;flex-direction: row; height: 40px;padding: auto 5px;text-align: center;}
 .parent {display: flex;align-items: center;}
 .parent {justify-content: space-between;}
