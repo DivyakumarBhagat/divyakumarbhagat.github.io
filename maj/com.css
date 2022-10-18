@@ -26,10 +26,10 @@ img, picture, video {display: block;max-width: 100%;border: 0;}
 
 header, .parent, .footer {width:98vw;}
 .content,.sidebar{height:100vh;}
-footer{height: 300px;}
+
 
 header{background-color:red ;border-bottom: 1px solid pink;height: 85px;}
-section ,nav {width: 90vw;margin: auto;display: flex;align-items: center;justify-content: space-between;flex-direction: row; height: 40px;padding: auto 5px;text-align: center;}
+header section ,header nav {width: 90vw;margin: auto;display: flex;align-items: center;justify-content: space-between;flex-direction: row; height: 40px;padding: auto 5px;text-align: center;}
 .parent {display: flex;align-items: center;}
 .parent {justify-content: space-between;}
 
@@ -56,7 +56,7 @@ nav ul li{text-align: center;display: flex;justify-content: space-evenly;margin:
 .sidebar{min-width: var(--sideMinBreak);width:30vw;max-width:var(--sideMaxBreak);background-color:red;}
 
 
-
+footer section {margin:0 10px;}
 .footer a {3px;}
 .footer ul {display:inline-block;flex-wrap: wrap;vertical-align: top;list-style:none;}
 .footer h3 {font-size: 1.5rem;text-transform: capitalize;padding:10px 1px;}
