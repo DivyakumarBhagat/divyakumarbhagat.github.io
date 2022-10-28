@@ -1,5 +1,5 @@
 export function nav() { return '<nav><li><a href="#">Home</a></li><li><a href="#">About</a><ul><li><a href="#">Portfolio</a></li><li><a href="#">Others</a></li></ul></li><li><a href="#">Contact</a></li></nav>'; }
-export function logo() { return '<section class="a"><img src="http://flexbox.ninja/assets/images/logo.svg" alt="Flexbox.ninja"><a href="#">If Itz True</a></section>';}
+export function logo() { return '<section class="a"><img src="https://flexbox.ninja/assets/images/logo.svg" alt="Flexbox.ninja"><a href="#">If Itz True</a></section>';}
 
 export function impLinks() { return `<ul><h3>Essential Links</h3><li><a href=''>Home</a></li><li><a href=''>About Us</a></li><li><a href=''>FAQs</a></li><li><a href=''>Contact Us</a></li><li><a href=''>Community n Forum</a></li><li><a href=''>Careers</a></li><li><a href=''>Support us</a></li></ul>`;}
 export function exploreCat() { return `<ul><h3>Explore Categories</h3><li><a href=''>Earth</a></li><li><a href=''>Humans</a></li><li><a href=''>Jupiter</a></li><li><a href=''>Sun</a></li><li><a href=''>Moon</a></li><li><a href=''>History</a></li><li><a href=''>Geography</a></li><li><a href=''>Living Organisms</a></li></ul>`;}
