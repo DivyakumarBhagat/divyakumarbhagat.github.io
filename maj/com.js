@@ -11,5 +11,5 @@ function execution()
 document.getElementById("header").outerHTML = header();
 //document.getElementById("footer").outerHTML = footer();
 }
-window.addEventListener('load', (event) =>{execution();});
-//window.addEventListener('DOMContentLoaded', (event) =>{execution();});
+//window.addEventListener('load', (event) =>{execution();});
+window.addEventListener('DOMContentLoaded', (event) =>{execution();});
