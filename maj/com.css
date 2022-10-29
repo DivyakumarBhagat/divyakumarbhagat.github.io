@@ -1,22 +1,3 @@
-/** Reset */
-html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; box-sizing: border-box; }
-* {padding: 0;margin: 0;max-width: 100%;overflow-x: hidden;position: relative;display: block;}
-*,*::before,*::after{box-sizing: inherit;}
-a, span { display: inline-block; }
-a{text-decoration:none; background: transparent; color:inherit; cursor:pointer;}
-a:active, a:hover { outline: 0; }
-button{background-color:transparent; display: block; color:inherit; border-width:0; padding:0;font: inherit; border: none; background: none;cursor:pointer;}
-figure{margin:0;}
-input::-moz-focus-inner {border:0; padding:0; margin:0;}
-input, button, textarea, select { -webkit-appearance: none; -moz-appearance: none; }
-ul, ol, li{margin:0; padding:0; list-style:none;}
-h1, h2, h3, h4, h5, h6{margin:0; font-size:inherit; font-weight:inherit;}
-p{margin:0;}
-img, picture, video {display: block;max-width: 100%;border: 0;}
-
-
-
-
 
 :root {--hBreak: 900px;--bBreak: 300px;--conBreak: 300px;--sideMinBreak:250px;--sideMaxBreak:400px;--hH: 90px;--cH: 100vh;--fH: 300px;}
 
