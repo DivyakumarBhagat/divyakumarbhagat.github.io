@@ -9,7 +9,7 @@ function footer() {return '<footer class="footer"><section>${impLinks()}${explor
 function execution()
 {
 document.getElementById("header").outerHTML = header();
-//document.getElementById("footer").outerHTML = footer();
+document.getElementById("footer").outerHTML = footer();
 }
 window.addEventListener('load', (event) =>{execution();});
-//window.addEventListener('DOMContentLoaded', (event) =>{execution();});
+window.addEventListener('DOMContentLoaded', (event) =>{execution();});
