@@ -14,23 +14,20 @@ header nav a { display: block;font-size: 1.125em;font-weight: 300;text-align: ce
 header .a img ,.a a{ text-align: center;margin: 0 auto; }
 header .a img { height:45px;}
 header .a a { font-size:1.25em; font-weight:bold;text-decoration: none;}
-header nav li:hover > ul { visibility:visible;opacity:1;}
+header nav li:hover > ul { visibility:visible;opacity:1;text-decoration: underline;}
 header nav li ul { list-style: none;visibility:hidden;opacity:0;position: absolute;left: 0;right: 0;margin: 0 auto;z-index: 10;top: 80px;min-width:200px;width:80vw;max-width:700px;height: 40px;}
 header nav ul li { text-align: center;display: flex;justify-content: space-between;margin:auto;}
 
 
-.var1 { --bg: purple;--tl: orange;--l: lightgrey;--lh: orange;--lhb: lightgrey; --cta: lightblue;
-
-  --tbg: darkgrey; --h: purple; --txth: white; --txt: grey; --d:black;}
 
 
-header { background-color: var(--bg);}
+header { background-color: purple;}
 header .logo { }
-header .a a { color: var(--tl);}
-header .a a:hover { color: var(--cta);}
-header nav a { background-color: var(--bg);color: var(--tl);}
-header nav a:hover { color: var(--lh);background-color: var(--tl);}
-header nav li ul { background-color: var(--bg);}
+header .a a { color: orange;}
+header .a a:hover { color: lightblue;}
+header nav a { background-color: purple;color: orange;}
+header nav a:hover { color: lightgrey;background-color: orange;}
+header nav li ul { background-color: purple;}
 
 .parent {display: flex;flex-wrap:wrap;justify-content: center;padding:auto;}
 .child {flex: 1 1 var(--bBreak);}
@@ -49,11 +46,9 @@ footer hr { width: 85%;text-align: center;height: 2px;}
 
 
 
-
-
-footer { background-color: var(--tbg);}
-footer hr { background-color: var(--hbg);}
-footer section { background-color: var(--d);color: var(--txt);}
-footer h3 { color: var(--txth);}
-footer a { color: var(--tl);}
-footer a:hover { color:  var(--lh);background-color: var(--tl);}
+footer { background-color: darkgrey;}
+footer hr { background-color: purple;}
+footer section { background-color: black;color: grey;}
+footer h3 { color: white;}
+footer a { color: orange;}
+footer a:hover { color:  lightgrey;background-color: orange;}
