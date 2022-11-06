@@ -48,7 +48,7 @@ footer hr { width: 85%;text-align: center;height: 2px;}
 
 footer { background-color: darkgrey;}
 footer hr { background-color: purple;}
-footer section { background-color: black;color: grey;}
+footer section { background-color: black;color: lightgrey;}
 footer h3 { color: white;}
-footer a { color: orange;}
+footer a { color: lightgrey;}
 footer a:hover { color:  lightgrey;background-color: orange;}
