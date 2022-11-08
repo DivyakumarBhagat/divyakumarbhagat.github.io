@@ -1,4 +1,4 @@
-
+"use strict"
 import { nav,logo,impLinks,exploreCat,solu,legal,workwithus,intouch,about,contact,newsletter,endfooter } from './essentials.js';
 
 
