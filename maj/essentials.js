@@ -1,30 +1,18 @@
 "use strict"
 
-function updatelink(item, aa = "")
-{ 
-  if (aa !== "") {return `<li><a href="${item.link}">${item.name}</a> ${aa} </li>`; }
-  else { `<li><a href="${item.link}">${item.name}</a></li>`; }
-}
+function acc(a,b="") {return `<li><a href="${a.link}">${a.name}</a>${b}</li>`;}
 export function nav() {
-                       
- var json = [{"link":"/", "name":"Home"},{"link":"#", "name":"About", "sub":{"link":"#", "name":"Portfolio"},{"link":"#", "name":"Others"}},{"link":"#", "name":"Contacts"}];
-
-var a ="";
-var aa = "";
-json.forEach((item) => {
-  aa = "";
-  if (item.hasOwnProperty("sub")) {
-    item.sub.forEach((i) => {
-      aa = `${aa} ${updatelink(i)}`;
-  }
-                     aa = `<ul> ${aa} </ul>`;
-}
-  a = `${a} ${updatelink(item,aa)}`;
-});  
-                       return `<nav> ${a} </nav>`;
-                       
+ var json =   [
+{"link":"/", "name":"Home"},
+{"link":"#", "name":"About","sub":[{"link":"#", "name":"Portfolio"},{"link":"#", "name":"Others"} ]},
+{"link":"#", "name":"Contacts"}
+];
+var a ="";var b ="";
+for (let i in json) {if (json[i].hasOwnProperty("sub")) {json[i].sub.forEach((a) => {b = b + acc(a);});b = `<ul>${b}</ul>`;}a = a + acc(json[i], b);b="";}
+   return `<nav>${a}</nav>`;  
 }               
                        
+
 export function logo() { return '<section class="a"><img src="https://flexbox.ninja/assets/images/logo.svg" alt="Flexbox.ninja"><a href="#">If Itz True</a></section>';}
 
 export function impLinks() { return `<ul><h3>Essential Links</h3><li><a href=''>Home</a></li><li><a href=''>About Us</a></li><li><a href=''>FAQs</a></li><li><a href=''>Contact Us</a></li><li><a href=''>Community n Forum</a></li><li><a href=''>Careers</a></li><li><a href=''>Support us</a></li></ul>`;}
