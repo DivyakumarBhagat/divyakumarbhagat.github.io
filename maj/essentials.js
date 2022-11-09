@@ -7,6 +7,13 @@ for (let i in json) {if (json[i].hasOwnProperty("sub")) {json[i].sub.forEach((a)
   return a;
 }
 
+function accs(a) {return `<a href="${a.link}">${a.name}</a>`;}
+function gens(json) {
+ var a ="";
+for (let i in json) {a = a + accs(json[i]);}
+  return a;
+}
+
 export function nav() {
  var json =   [{"link":"/", "name":"Home"},{"link":"#", "name":"About","sub":[{"link":"#", "name":"Portfolio"},{"link":"#", "name":"Others"} ]},{"link":"#", "name":"Contacts"}];
    return `<nav>${gen(json)}</nav>`;  
@@ -38,7 +45,7 @@ var json =   [{"link":"#", "name":"Author"},{"link":"#", "name":"Advertise"}];
 
 export function intouch() { 
  var json =   [{"link":"#", "name":"FB"},{"link":"#", "name":"TW"},{"link":"#", "name":"LI"},{"link":"#", "name":"IG"},{"link":"#", "name":"YT"},{"link":"#", "name":"RD"},{"link":"#", "name":"GH"},{"link":"#", "name":"M"}];
- return `<ul><h3>In Touch</h3>${gen(json)}</ul>`;}
+ return `<ul><h3>In Touch</h3><li>${gens(json)}</li></ul>`;}
 
 export function about() { return `<ul class="a"><h3>About</h3><li>Ifitztrue is one of the best scifi n paranormal activity investigation site to help many people like us to learn about latest technologies being used in paranormal activity n also provide shoppingfor ur fav instuments</li></ul>`;}
 export function contact() { return `<ul class="a"><h3>Contact Us</h3><li>Mozilla Foundation,</li><li>331 E Evelyn Ave,</li><li>Mountain View, CA 94041,</li><li>USA</li><li><a href=''>+1 5555551212</a></li><li><a href=''>email@example.com</a></li></ul>`;}
