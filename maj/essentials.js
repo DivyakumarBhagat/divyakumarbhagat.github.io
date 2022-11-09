@@ -4,7 +4,9 @@ function acc(a,b="") {return `<li><a href="${a.link}">${a.name}</a>${b}</li>`;}
 function gen(json) {
  var a ="";var b ="";
 for (let i in json) {if (json[i].hasOwnProperty("sub")) {json[i].sub.forEach((a) => {b = b + acc(a);});b = `<ul>${b}</ul>`;}a = a + acc(json[i], b);b="";}
+  return a;
 }
+
 export function nav() {
  var json =   [{"link":"/", "name":"Home"},{"link":"#", "name":"About","sub":[{"link":"#", "name":"Portfolio"},{"link":"#", "name":"Others"} ]},{"link":"#", "name":"Contacts"}];
    return `<nav>${gen(json)}</nav>`;  
