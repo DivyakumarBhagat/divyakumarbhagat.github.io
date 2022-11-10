@@ -5,7 +5,7 @@
 resets
 */
 
-* {margin: 0;padding: 0;all: unset;}
+* {margin: 0;padding: 0;}
 *, *::before, *::after {box-sizing: border-box;}
 html, body {height: 100%;}
 img, picture, video, canvas, svg {display: block;max-width: 100%;}
