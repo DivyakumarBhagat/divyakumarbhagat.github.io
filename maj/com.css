@@ -62,7 +62,7 @@ footer li > a:link:visited { margin:5px;}
 footer a:link:visited { margin:10px;text-decoration: none;}
 footer a:hover:active { text-decoration: underline;}
 footer h3 { font-size: 1.5rem;text-transform: capitalize;font-weight:bold;height:4.5rem;}
-footer hr { width: 85%;text-align: center;height: 2px;}
+footer hr { width: 85%;margin:10px auto;height: 2px;}
 footer p { width:90%;justify-content: center;}
 
 
