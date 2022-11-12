@@ -24,10 +24,10 @@ header {margin: 0 auto;height: 90px;}
 header section {float:center;height: 40px;width: 95%;padding:10px 16px;margin: 0 auto;}
 header nav { display: flex;justify-content: space-between;align-items: center;width: 90%;margin: 0 auto;flex-direction: row;height: 40px;text-align: center;border-bottom: 1px solid pink;min-width:250px;max-width:700px;list-style: none;}
 header nav ul { list-style: none;display: flex;width: 90%;justify-content: space-evenly;z-index: 5;}
-header nav a:link:visited { display: block;font-size: 1.125em;font-weight: 300;text-align: center; flex: 1 1 150px; }
+header nav a { display: block;font-size: 1.125em;font-weight: 300;text-align: center; flex: 1 1 150px; }
 header .a img ,.a a{ vertical-align: middle; text-align: center;margin: 0 auto; }
 header .a img { height:45px;float:left;}
-header .a a:link:visited { font-size:1.25em; font-weight:bold;text-decoration: none;float:right;}
+header .a a { font-size:1.25em; font-weight:bold;text-decoration: none;float:right;}
 header nav li:hover > ul { visibility:visible;opacity:1;text-decoration: underline;border-radius: 0px 0px 5px 5px;}
 header nav li ul { list-style: none;visibility:hidden;opacity:0;position: absolute;left: 0;right: 0;margin: 0 auto;z-index: 10;top: 70px;min-width:200px;width:80vw;max-width:700px;height: 40px;}
 header nav ul li { text-align: center;display: flex;justify-content: space-between;margin:auto;}
@@ -37,9 +37,9 @@ header nav ul li { text-align: center;display: flex;justify-content: space-betwe
 
 header { background-color: purple;box-shadow: 0 0 25px 0 black;}
 header .logo { }
-header .a a:link:visited { color: orange;}
+header .a a { color: orange;}
 header .a a:hover:active { color: lightblue;}
-header nav a:link:visited { background-color: purple;color: orange;}
+header nav a { background-color: purple;color: orange;}
 header nav a:hover:active { color: lightgrey;background-color: orange;}
 header nav li ul { background-color: purple;}
 header nav li:hover > ul{box-shadow:10px 10px 40px rgba(0,0,0,0.5);}
@@ -58,8 +58,8 @@ footer li { overflow: hidden;text-align: left;}
 footer ul { flex: 1 1 150px; list-style:none;margin: 50px 10px;}
 footer ul.a { flex: 1 1 280px; }
 footer ul.a > li { text-align: center;}
-footer li > a:link:visited { margin:5px;}
-footer a:link:visited { margin:10px;text-decoration: none;}
+footer li > a { margin:5px;}
+footer a { margin:10px;text-decoration: none;}
 footer a:hover:active { text-decoration: underline;}
 footer h3 { font-size: 1.5rem;text-transform: capitalize;font-weight:bold;height:4.5rem;}
 footer hr { width: 85%;margin:10px auto;height: 2px;}
@@ -70,5 +70,5 @@ footer { background-color: black;}
 footer hr { background-color: purple;}
 footer section { color: lightgrey;}
 footer h3 { color: white;}
-footer a:link:visited { color: lightgrey;}
+footer a { color: lightgrey;}
 footer a:hover:active { color:  lightgrey;background-color: orange;}
