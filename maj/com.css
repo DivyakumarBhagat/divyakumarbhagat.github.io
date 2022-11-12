@@ -26,7 +26,7 @@ header section {float:center;height: 40px;width: 95%;padding:10px 16px;margin: 0
 header nav { display: flex;justify-content: space-between;align-items: center;width: 90%;margin: 0 auto;flex-direction: row;height: 40px;text-align: center;border-bottom: 1px solid pink;min-width:250px;max-width:700px;list-style: none;}
 header nav ul { list-style: none;display: flex;width: 90%;justify-content: space-evenly;z-index: 5;}
 header nav a { display: block;font-size: 1.125em;font-weight: 300;text-align: center; flex: 1 1 150px; }
-header .a img ,.a a{ text-align: center;margin: 0 auto; }
+header .a img ,.a a{ vertical-align: middle; text-align: center;margin: 0 auto; }
 header .a img { height:45px;float:left;}
 header .a a { font-size:1.25em; font-weight:bold;text-decoration: none;float:right;}
 header nav li:hover > ul { visibility:visible;opacity:1;text-decoration: underline;border-radius: 0px 0px 5px 5px;}
@@ -45,24 +45,24 @@ header nav a:hover { color: lightgrey;background-color: orange;}
 header nav li ul { background-color: purple;}
 header nav li:hover > ul{box-shadow:10px 10px 40px rgba(0,0,0,0.5);}
 
-.parent {display: flex;flex-wrap:wrap;justify-content: center;padding:10px 20px;margin:0 auto;}
-.child {flex: 1 1 var(--bBreak);}
+.parent {display: flex;flex-wrap:wrap;justify-content: center;margin:0 auto;}
+.child {flex: 1 1 var(--bBreak);padding:10px 20px;}
 .content,.sidebar{height:70vh;}
 .content{min-width :var(--conBreak);width: 80%;background-color:blue;}
 .sidebar{min-width: var(--sideMinBreak);width:20%;max-width:var(--sideMaxBreak);background-color:red;}
 
 
-footer {margin: 0 auto;padding: 10px 16px;}
+footer {margin: 0 auto;}
 
-footer section { display: flex;flex-wrap:wrap;justify-content: space-between; margin: 20px auto; width:90%;}
+footer section { display: flex;flex-wrap:wrap;justify-content: space-between; margin: 20px auto; width:90%;text-align: center;}
 footer li { overflow: hidden;}
-footer ul { flex: 1 1 150px; list-style:none;margin: 50px 30px;}
+footer ul { flex: 1 1 150px; list-style:none;margin: 40px 10px;}
 footer ul.a { flex: 1 1 250px; }
 footer a { margin:10px;text-decoration: none;}
 footer a:hover { text-decoration: underline;}
-footer h3 { font-size: 1.5rem;text-transform: capitalize;font-weight:bold;padding:10px 1px;}
+footer h3 { font-size: 1.5rem;text-transform: capitalize;font-weight:bold;padding:20px 10px;}
 footer hr { width: 85%;text-align: center;height: 2px;}
-
+footer p { width:90%;justify-content: center;}
 
 
 footer { background-color: black;}
