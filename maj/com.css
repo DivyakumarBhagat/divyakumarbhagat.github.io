@@ -53,17 +53,22 @@ header nav li:hover > ul{box-shadow:10px 10px 40px rgba(0,0,0,0.5);}
 
 footer { margin: 0 auto;}
 
-footer section { display: flex;flex-wrap:wrap;justify-content: space-between; margin: auto; width:90%;text-align: center;}
+footer section { display: flex;flex-wrap:wrap;justify-content: space-between; margin: 0 auto; width:85%;}
 footer li { overflow: hidden;text-align: left;}
-footer ul { flex: 1 1 150px; list-style:none;margin: 50px 10px;}
+footer ul { flex: 1 1 250px; list-style:none;margin: 0 40px;padding: 20px;}
+/*
 footer ul.a { flex: 1 1 280px; }
-footer ul.a > li { text-align: center;}
-footer li > a { margin:5px;}
-footer a { margin:10px;text-decoration: none;}
+*/
+footer a { text-decoration: none;}
 footer a:hover:active { text-decoration: underline;}
 footer h3 { font-size: 1.5rem;text-transform: capitalize;font-weight:bold;height:4.5rem;}
 footer hr { width: 85%;margin:10px auto;height: 2px;}
-footer p { width:90%;justify-content: center;}
+footer p { width:90%;text-align: center;margin:0 auto;}
+
+form { display: flex;flex-wrap: wrap;justify-content: space-between;max-width:700px;text-align: center;}
+input { border: 0;max-width: 280px;width: 60%;min-width:200px;margin:0 auto;margin-top: 15px;border-radius:15px;}
+input[type="email"] { padding: 5px;}
+input[type="submit"] { cursor: pointer;padding: 10px 20px;}
 
 
 footer { background-color: black;}
@@ -72,3 +77,4 @@ footer section { color: lightgrey;}
 footer h3 { color: white;}
 footer a { color: lightgrey;}
 footer a:hover:active { color:  lightgrey;background-color: orange;}
+input[type="submit"] {background-color: lightblue;color: red;}
