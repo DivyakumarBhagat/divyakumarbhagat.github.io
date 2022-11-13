@@ -19,7 +19,7 @@ for (let i in json) {a = a + accs(json[i]);}
 }
 
 
-function met(title,content) { return `<h3>${title}</h3><ul>${content}</ul>`;}
+function met(title,content) { return `<div><h3>${title}</h3><ul>${content}</ul></div>`;}
 
 export function nav() {
  var json =   [{"link":"/", "name":"Home"},{"link":"#", "name":"About","sub":[{"link":"#", "name":"Portfolio"},{"link":"#", "name":"Others"} ]},{"link":"#", "name":"Contacts"}];
@@ -53,8 +53,14 @@ export function intouch() {
  var json =   [{"link":"#", "name":"FB"},{"link":"#", "name":"TW"},{"link":"#", "name":"LI"},{"link":"#", "name":"IG"},{"link":"#", "name":"YT"},{"link":"#", "name":"RD"},{"link":"#", "name":"GH"},{"link":"#", "name":"M"}];
  return met("In Touch",gens(json));}
 
-export function about() { return `<h3>${logoset}</h3><ul class="a"><li>Ifitztrue is one of the best scifi n paranormal activity investigation site to help many people like us to learn about latest technologies being used in paranormal activity n also provide shoppingfor ur fav instuments</li></ul>`;}
-export function contact() { return `<h3>Contact Us</h3><ul class="a"><h3>Contact Us</h3><li>Mozilla Foundation,</li><li>331 E Evelyn Ave,</li><li>Mountain View, CA 94041,</li><li>USA</li><li><a href=''>+1 5555551212</a></li><li><a href=''>email@example.com</a></li></ul>`;}
-export function newsletter() { return `<h3>Newsletter</h3><ul class="a"><form action="#"><p>Subscribe to our newsletter to get our latest news.</p><input type="text" placeholder="Full Name" name="name" required><input type="email" name="mail" placeholder="Enter email address" required><input type="submit" value="Subscribe"></form></ul>`;}
+export function about() { 
+ return met(`<h3>${logoset}</h3>`,`<li>Ifitztrue is one of the best scifi n paranormal activity investigation site to help many people like us to learn about latest technologies being used in paranormal activity n also provide shoppingfor ur fav instuments</li>`);}
 
-export function endfooter() { return `<p>copyright &copy; 2021-2022 <a href='/'>${sitename}</a>. All Rights Reseverd</p>`;}
+export function contact() { 
+ return met("Contact Us",`<li>Mozilla Foundation,</li><li>331 E Evelyn Ave,</li><li>Mountain View, CA 94041,</li><li>USA</li><li><a href=''>+1 5555551212</a></li><li><a href=''>email@example.com</a></li>`);}
+
+export function newsletter() { 
+ return met("Newsletter",`<form action="#"><p>Subscribe to our newsletter to get our latest news.</p><input type="text" placeholder="Full Name" name="name" required><input type="email" name="mail" placeholder="Enter email address" required><input type="submit" value="Subscribe"></form>`);}
+
+export function endfooter() { 
+ return met("",`<p>copyright &copy; 2021-2022 <a href='/'>${sitename}</a>. All Rights Reseverd</p>`);}
