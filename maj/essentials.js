@@ -49,6 +49,6 @@ export function intouch() {
 
 export function about() { return `<ul class="a"><h3>About</h3><li>Ifitztrue is one of the best scifi n paranormal activity investigation site to help many people like us to learn about latest technologies being used in paranormal activity n also provide shoppingfor ur fav instuments</li></ul>`;}
 export function contact() { return `<ul class="a"><h3>Contact Us</h3><li>Mozilla Foundation,</li><li>331 E Evelyn Ave,</li><li>Mountain View, CA 94041,</li><li>USA</li><li><a href=''>+1 5555551212</a></li><li><a href=''>email@example.com</a></li></ul>`;}
-export function newsletter() { return `<ul class="a"><h3>Newsletter</h3><li><form action="#"><li><input type="text" placeholder="Full Name" name="name" required></li><li><input type="email" placeholder="Email address" name="mail" required></li><li></li><li><input type="submit" value="Subscribe"></li></form></li></ul>`;}
+export function newsletter() { return `<ul class="a"><h3>Newsletter</h3><form action="#"><p>Subscribe to our newsletter to get our latest news.</p><input type="text" placeholder="Full Name" name="name" required><input type="email" name="mail" placeholder="Enter email address" required><input type="submit" value="Subscribe"></form></ul>`;}
 
 export function endfooter() { return `<p>copyright &copy; 2021-2022 <a href='/'>If Itz True</a>. All Rights Reseverd</p>`;}
