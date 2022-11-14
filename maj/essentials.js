@@ -26,7 +26,7 @@ export function nav() {
 }               
                        
 
-export function logo() { return '<section class="a">${logoset}</section>';}
+export function logo() { return '<section class="a">${logoset()}</section>';}
 
 export function impLinks() {
  var json =   [{"link":"/", "name":"Home"},{"link":"#", "name":"About Us"},{"link":"#", "name":"FAQs"},{"link":"#", "name":"Contact Us"},{"link":"#", "name":"Community n Forum"},{"link":"#", "name":"Careers"},{"link":"#", "name":"Support us"}];
