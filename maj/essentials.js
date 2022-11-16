@@ -1,7 +1,7 @@
 "use strict"
-
-function site() {return '<a href="#">If Itz True</a>';}
-function logoset() { return `<img src="https://flexbox.ninja/assets/images/logo.svg" alt="${site()}_Logo">`;}
+function sitename() {return "If Itz True";}
+function site() {return `<a href="#">${sitename()}</a>`;}
+function logoset() { return `<img src="https://flexbox.ninja/assets/images/logo.svg" alt="${sitename()}_Logo">`;}
 
 function acc(a,b="") {return `<a href="${a.link}">${a.name}</a>${b}`;}
 function gen(json) {var a ="";var b ="";for (let i in json) {if (json[i].hasOwnProperty("sub")) {json[i].sub.forEach((a) => {b = b + `<li>${acc(a)}</li>`;});b = `<ul>${b}</ul>`;}a = a + `<li>${acc(json[i], b)}</li>`;b="";} return a;}
