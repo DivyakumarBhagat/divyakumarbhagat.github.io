@@ -26,8 +26,8 @@ header nav { display: flex;justify-content: space-between;align-items: center;wi
 header nav ul { list-style: none;display: flex;width: 90%;justify-content: space-evenly;z-index: 5;}
 header nav a { display: block;font-size: 1.125em;font-weight: 300;text-align: center; flex: 1 1 150px; }
 header .a img ,.a a{ vertical-align: middle; text-align: center;margin: 0 auto; }
-header .a img { height:45px;float:left;}
-header .a a { font-size:1.25em; font-weight:bold;text-decoration: none;float:right;}
+header .a img { height:45px;float:left;margin:auto;}
+header .a a { font-size:1.25em; font-weight:bold;text-decoration: none;float:right;margin:auto;}
 header nav li:hover > ul { visibility:visible;opacity:1;text-decoration: underline;border-radius: 0px 0px 5px 5px;}
 header nav li ul { list-style: none;visibility:hidden;opacity:0;position: absolute;left: 0;right: 0;margin: 0 auto;z-index: 10;top: 70px;min-width:200px;width:80vw;max-width:700px;height: 40px;}
 header nav ul li { text-align: center;display: flex;justify-content: space-between;margin:auto;}
