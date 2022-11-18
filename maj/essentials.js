@@ -34,7 +34,7 @@ var json =   [{"link":"#", "name":"Author"},{"link":"#", "name":"Advertise"}];
  return met("Work With Us",gen(json));}
 export function intouch() { 
  var json =   [{"link":"#", "name":"FB"},{"link":"#", "name":"TW"},{"link":"#", "name":"LI"},{"link":"#", "name":"IG"},{"link":"#", "name":"YT"},{"link":"#", "name":"RD"},{"link":"#", "name":"GH"},{"link":"#", "name":"M"}];
- return mets("",gens(json));}
+ return gens(json);}
 
 export function about() { 
  return meta(`<h3>${logoset()}</h3>`,`<li>Ifitztrue is one of the best scifi n paranormal activity investigation site to help many people like us to learn about latest technologies being used in paranormal activity n also provide shoppingfor ur fav instuments</li>`);}
@@ -46,4 +46,4 @@ export function newsletter() {
  return met("Newsletter",`<form action="#"><p>Subscribe to our newsletter to get our latest news.</p><input type="text" placeholder="Full Name" name="name" required><input type="email" name="mail" placeholder="Enter email address" required><input type="submit" value="Subscribe"></form>`);}
 
 export function endfooter() { 
- return mets("",`<p>copyright &copy; 2021-2022 <a href='/'>${site()}</a>. All Rights Reseverd</p>`);}
+ return `<p>copyright &copy; 2021-2022 <a href='/'>${site()}</a>. All Rights Reseverd</p>`;}
