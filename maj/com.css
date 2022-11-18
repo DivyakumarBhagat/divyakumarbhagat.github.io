@@ -20,17 +20,20 @@ header, .parent, footer {width:100vw;}
 
 
 /** header Section **/
-header {margin: 0 auto;height: 90px;}
-header section {float:center;height: 40px;width: 95%;padding:10px 16px;margin: 0 auto;}
-header nav { display: flex;justify-content: space-between;align-items: center;width: 90%;margin: 0 auto;flex-direction: row;height: 40px;text-align: center;min-width:250px;max-width:700px;list-style: none;}
-header nav ul { list-style: none;display: flex;width: 90%;justify-content: space-evenly;z-index: 5;}
-header nav a { display: block;font-size: 1.125em;font-weight: 300;text-align: center; flex: 1 1 150px; }
-header .a img ,.a a{ vertical-align: middle; text-align: center;margin: 0 auto; }
-header .a img { height:45px;float:left;margin:auto;}
-header .a a { font-size:1.25em; font-weight:bold;text-decoration: none;float:right;margin:auto;}
-header nav li:hover > ul { visibility:visible;opacity:1;text-decoration: underline;border-radius: 0px 0px 5px 5px;}
-header nav li ul { list-style: none;visibility:hidden;opacity:0;position: absolute;left: 0;right: 0;margin: 0 auto;z-index: 10;top: 70px;min-width:200px;width:80vw;max-width:700px;height: 40px;}
-header nav ul li { text-align: center;display: flex;justify-content: space-between;margin:auto;}
+header { margin:0 auto;height:90px;}
+header, header .a ,header ul{ display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;}
+header section { float:center;height:50px;width:95%;padding:2px 16px;margin:0 auto;}
+header .a, header .b { width:96%;max-width:1000px;margin:0 auto;flex:1 1 auto;list-style:none;}
+header .b { height:40px;}
+header .b > ul { margin:0 auto;justify-content:space-evenly;list-style:none;z-index:5;}
+header .b li {display:inline;flex:1;}
+header .b a {display:block;padding:0.5em 1em;font-size:0.85em;font-weight:300;text-align:center;}
+header .a img ,header .a a{ margin:0 auto; }
+header .a img { height:100%;max-width:auto;}
+header .a a { font-size:1.25em;font-weight:bold;text-decoration:none;}
+header .b li:hover > ul { visibility:visible;opacity:1;border-radius:10px;}
+header .b li >ul { list-style:none;visibility:hidden;opacity:0;position: absolute;left:0;right:0;margin:0 auto;z-index:10;top:80px;min-width:200px;width:80%;height:40px;}
+
 
 
 
