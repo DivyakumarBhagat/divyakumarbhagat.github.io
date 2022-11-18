@@ -14,7 +14,7 @@ function meta(title,content) { return `<div class="a"><h3>${title}</h3><ul>${con
 
 export function nav() {
  var json =   [{"link":"/", "name":"Home"},{"link":"#", "name":"About","sub":[{"link":"#", "name":"Portfolio"},{"link":"#", "name":"Others"} ]},{"link":"#", "name":"Contacts"}];
-   return `<nav>${gen(json)}</nav>`;  }      
+   return `<nav class="b"><ul>${gen(json)}</ul></nav>`;  }      
 
 export function logo() { return `<section class="a">${logoset()}${site()}</section>`;}
 export function impLinks() {
