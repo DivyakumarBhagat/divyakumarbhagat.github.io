@@ -45,5 +45,10 @@ export function contact() {
 export function newsletter() { 
  return met("Newsletter",`<form action="#"><p>Subscribe to our newsletter to get our latest news.</p><input type="text" placeholder="Full Name" name="name" required><input type="email" name="mail" placeholder="Enter email address" required><input type="submit" value="Subscribe"></form>`);}
 
+
+export function searchsomething() {
+ return "search bar";
+}
+
 export function endfooter() { 
  return `<p>copyright &copy; 2021-2022 <a href='/'>${site()}</a>. All Rights Reseverd</p>`;}
