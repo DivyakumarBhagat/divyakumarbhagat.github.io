@@ -4,7 +4,7 @@ import { nav,logo,impLinks,exploreCat,solu,legal,workwithus,intouch,about,contac
 
 
 function header() {return `<header class="var1">${logo()}${nav()}</header>`;}
-function footer() {return `<footer><section class="a">${about()}${impLinks()}${exploreCat()}${solu()}${legal()}${workwithus()}${contact()}${newsletter()}</section><hr><section class="b">${intouch()}</section><hr><section class="c">${endfooter()}</section></footer>`;}
+function footer() {return `<footer><section class="ss">${about()}${impLinks()}${exploreCat()}${solu()}${legal()}${workwithus()}${contact()}${newsletter()}</section><hr><section class="sa">${intouch()}</section><hr><section>${endfooter()}</section></footer>`;}
 
 
 
