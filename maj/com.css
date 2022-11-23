@@ -34,8 +34,9 @@ header .b a ,footer .ss a, footer .sa a ,footer form p { font-size:16px;line-hei
 footer section:last-child { font-size:14px;line-height:20px;}
 
 
-header, header .b ,header ul{ display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;}
+header, header .a ,header ul{ display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;}
 header section { float:center;height:50px;padding:2px 16px;}
+header .b {justify-content:space-around;}
 header .a, header .b { max-width:1000px;flex:1 1 auto;list-style:none;}
 header .b { height:40px;}
 header .b > ul { justify-content:space-evenly;list-style:none;z-index:5;}
@@ -88,7 +89,7 @@ footer .ss li {display: block;}
 footer .ss a, footer .sa a { display: inline-block;}
 footer .sa ul {align-items:center;min-width:200px;width:50%;}
 footer .sa li {display: inline-block;}
-footer form { align-items:flex-start;justify-content:center;}
+footer form { align-items:flex-start;}
 footer form p {padding-top:20px;line-height:2rem;}
 footer form input { border: 0;min-width:200px;width: 60%;max-width: 280px;margin-top: 15px;border-radius:15px;padding: 5px;alignSelf:center}
 footer form input[type="email"], input[type="text"] {}
