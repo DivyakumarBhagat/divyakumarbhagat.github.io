@@ -49,4 +49,4 @@ export function searchsomething() {
 }
 
 export function endfooter() { 
- return `<p>copyright &copy; 2021-2022 <a href='/'>${site()}</a>. All Rights Reseverd</p>`;}
+ return `<p>copyright &copy; 2021-2022 <a href='/'>${site()}</a> </p><p>All Rights Reseverd</p>`;}
