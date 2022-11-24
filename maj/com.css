@@ -31,12 +31,11 @@ header section, header .a, header .b { width:95%;}
 
 header .a a,footer h3 ,footer form input, footer p { font-size:18px;line-height:26px;}
 header .b a ,footer .ss a, footer .sa a ,footer form p { font-size:16px;line-height:23px;}
-footer section:last-child { font-size:14px;line-height:20px;}
+footer section:last-child { font-size:12px;line-height:20px;}
 
 
-header, header .a ,header ul{ display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;}
+header, header .a ,header .b ,header ul{ display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;}
 header section { float:center;height:50px;padding:2px 16px;}
-header .b {justify-content:space-around;}
 header .a, header .b { max-width:1000px;flex:1 1 auto;list-style:none;}
 header .b { height:40px;}
 header .b > ul { justify-content:space-evenly;list-style:none;z-index:5;}
@@ -70,7 +69,7 @@ header nav li:hover > ul{box-shadow:10px 10px 40px rgba(0,0,0,0.5);}
 
 
 
-footer img { height: 40px;width:auto;}
+footer section img { height: 50px;width:auto;}
 footer section ,footer p, footer .sa ul, footer form input { margin: 0 auto;}
 footer section ,footer hr, footer form p{width:85%;}
 footer section ,footer .sa ul, footer form { display: flex;justify-content: space-around;flex-wrap: wrap;}
