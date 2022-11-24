@@ -79,7 +79,7 @@ footer div.a, footer form input[type="submit"] { flex: 2 2 auto;}
 footer section { align-items: flex-start;min-width:280px;padding:10px;}
 footer div { width:200px;margin-top:30px;}
 footer div.a { min-width: 280px;width: 28%;}
-footer h3 {text-transform: capitalize;font-weight:bold;height:40px;}
+footer h3 {text-transform: capitalize;font-weight:bold;height:40px;margin: 1em 0 auto;}
 footer hr { margin:10px auto;height: 2px;}
 footer a { text-decoration: none;line-height:2rem;}
 footer a:hover:active { text-decoration: underline;}
@@ -94,7 +94,7 @@ footer form input { border: 0;min-width:200px;width: 60%;max-width: 280px;margin
 footer form input[type="email"], input[type="text"] {}
 footer form input[type="submit"] { cursor: pointer;}
 footer section:last-child {float:center;margin-top:5px;padding:5px;width:100%;}
-
+footer section:last-child p {display:inline;}
 
 
 footer { background-color: black;}
