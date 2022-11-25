@@ -29,10 +29,6 @@ header,header section,header .a, header .b,header .b > ul ,header .b li >ul, hea
 header section, header .a, header .b { width:95%;}
 
 
-header .a a,footer h3 ,footer form input, footer p { font-size:18px;line-height:26px;}
-header .b a ,footer .ss a, footer .sa a ,footer form p { font-size:16px;line-height:23px;}
-footer section:last-child { font-size:12px;line-height:20px;}
-
 
 header, header .a ,header .b ,header ul{ display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;}
 header section { float:center;height:50px;padding:2px 16px;}
@@ -47,6 +43,9 @@ header .b li:hover > ul { visibility:visible;opacity:1;border-radius:10px;}
 header .b li >ul { list-style:none;visibility:hidden;opacity:0;position: absolute;left:0;right:0;z-index:10;top:80px;width:80%;min-width:200px;height:40px;}
 
 
+
+header .a a { font-size:18px;line-height:26px;}
+header .b a { font-size:16px;line-height:23px;}
 
 
 
@@ -93,8 +92,10 @@ footer form p {padding-top:20px;line-height:2rem;}
 footer form input { border: 0;min-width:200px;width: 60%;max-width: 280px;margin-top: 15px;border-radius:15px;padding: 5px;alignSelf:center}
 footer form input[type="email"], input[type="text"] {}
 footer form input[type="submit"] { cursor: pointer;}
-footer section:last-child {float:center;margin-top:5px;padding:5px;width:100%;}
-footer section:last-child p {display:inline;}
+footer section:last-child { justify-content: center;align-self:flex-start;margin-top:5px;padding:10px;width:100%;font-size:12px;line-height:20px;}
+
+footer h3 ,footer form input, footer p { font-size:18px;line-height:26px;}
+footer .ss a, footer .sa a ,footer form p { font-size:16px;line-height:23px;}
 
 
 footer { background-color: black;}
