@@ -8,7 +8,7 @@ function gen(json) {var a ="";var b ="";for (let i in json) {if (json[i].hasOwnP
 
 
 function met(title,content) { return `<div><h3>${title}</h3><ul>${content}</ul></div>`;}
-function meta(title,content) { return `<div class="a"><h3>${title}</h3>${content}</div>`;}
+function meta(title,content) { return `<div class="a"><h3>${title}</h3><ul>${content}</ul></div>`;}
 
 export function nav() {
  var json =   [{"link":"/", "name":"Home"},{"link":"#", "name":"About","sub":[{"link":"#", "name":"Portfolio"},{"link":"#", "name":"Others"} ]},{"link":"#", "name":"Contacts"}];
@@ -49,4 +49,4 @@ export function searchsomething() {
 }
 
 export function endfooter() { 
- return `<p>copyright &copy; 2021-2022 <a href='/'>${site()}</a> </p><p>All Rights Reseverd</p>`;}
+ return `<p>copyright &copy; 2021-2022 <a href='/'>${site()}</a> All Rights Reseverd</p>`;}
