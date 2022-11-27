@@ -30,9 +30,9 @@ header section, header .a, header .b { width:95%;}
 
 
 
-header, header .a ,header .b ,header ul{ display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;}
+header, header .a ,header .b ,header ul{ display:flex;align-items:center;justify-content:space-around;flex-wrap:wrap;}
 header section { float:center;height:50px;padding:2px 16px;}
-header .a { justify-content:space-around;}
+header .a { justify-content:space-between;}
 header .a, header .b { max-width:1000px;flex:1 1 auto;list-style:none;}
 header .b { height:40px;}
 header .b > ul { justify-content:space-evenly;list-style:none;z-index:5;}
@@ -69,26 +69,25 @@ header nav li:hover > ul{box-shadow:10px 10px 40px rgba(0,0,0,0.5);}
 
 
 
-footer section img { height: 20vh;width:auto;}
-footer section ,footer p, footer .sa ul, footer form input { margin: 0 auto;}
+footer section img { height:30px;width:auto;}
+footer section ,footer p, footer .sa ul, footer form input { margin: 10px auto;}
 footer section ,footer hr, footer form p{width:85%;}
-footer section ,footer .sa ul, footer form { display: flex;justify-content: space-around;flex-wrap: wrap;}
+footer section ,footer .sa ul, footer form { display: flex;justify-content: space-around;flex-wrap: wrap;row-gap: 10px;column-gap: 20px;}
 footer div , footer form, footer form input { flex: 1 1 auto;}
 footer div.a, footer form input[type="submit"] { flex: 2 2 auto;}
 
 footer section { align-items: flex-start;min-width:280px;padding:10px;}
 footer div { width:200px;margin-top:30px;}
-footer div + div {margin-left:60px;}
 footer div.a { min-width: 280px;width: 28%;}
 footer h3 { text-transform: capitalize;font-weight:bold;height:auto;margin-bottom:10px;}
 footer hr { margin:10px auto;height: 2px;}
-footer a { text-decoration: none;line-height:2rem;}
+footer a { text-decoration: none;}
 footer a:hover:active { text-decoration: underline;}
 footer .ss ul { margin: 1em 0 .5em;}
 footer .ss li { display: block;}
 footer .ss a, footer .sa a { display: inline-block;}
 footer .sa ul { align-items:center;min-width:200px;width:50%;}
-footer .sa li { display: inline-block;}
+footer .sa li { display: inline-block;height:auto;}
 footer form { align-items:flex-start;}
 footer form p { padding-top:20px;}
 footer form input { border: 0;min-width:200px;width: 60%;max-width: 280px;margin-top: 15px;border-radius:15px;padding: 5px;alignSelf:center}
@@ -97,7 +96,8 @@ footer form input[type="submit"] { cursor: pointer;}
 footer section:last-child { justify-content: center;align-self:flex-start;margin-top:5px;padding:10px;width:100%;font-size:12px;line-height:20px;}
 
 footer h3 ,footer form input, footer .ss p { font-size:18px;line-height:26px;}
-footer .ss a, footer .sa a ,footer form p { font-size:16px;line-height:23px;}
+footer .ss a, footer .sa a ,footer form p { font-size:16px;line-height:26px;}
+footer .sa a {line-height:18px;}
 footer section:last-child p ,footer section:last-child a { font-size:14px;}
 
 footer { background-color: black;}
