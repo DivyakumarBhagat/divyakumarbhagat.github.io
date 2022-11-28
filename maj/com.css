@@ -26,7 +26,8 @@ footer {font-size:14px;}
 header { height:90px;}
 
 header,header section,header .a, header .b,header .b > ul ,header .b li >ul, header .a img ,header .a a { margin:0 auto;}
-header section, header .a, header .b { width:95%;}
+header section, header .a { width:98%;}
+header .b { width:85%;}
 
 
 
@@ -70,13 +71,14 @@ header nav li:hover > ul{box-shadow:10px 10px 40px rgba(0,0,0,0.5);}
 
 
 footer section img { height:30px;width:auto;}
-footer section ,footer p, footer .sa ul, footer form input { margin: 10px auto;}
+
+footer .sa ul, footer form input { margin: 10px auto;}
 footer section ,footer hr, footer form p{width:85%;}
 footer section ,footer .sa ul, footer form { display: flex;justify-content: space-around;flex-wrap: wrap;row-gap: 10px;column-gap: 20px;}
 footer div , footer form, footer form input { flex: 1 1 auto;}
 footer div.a, footer form input[type="submit"] { flex: 2 2 auto;}
 
-footer section { align-items: flex-start;min-width:280px;padding:10px;}
+footer section { margin: 0 auto; align-items: flex-start;min-width:280px;padding:10px;}
 footer div { width:200px;margin-top:30px;}
 footer div.a { min-width: 280px;width: 28%;}
 footer h3 { text-transform: capitalize;font-weight:bold;height:auto;margin-bottom:10px;}
@@ -89,7 +91,7 @@ footer .ss a, footer .sa a { display: inline-block;}
 footer .sa ul { align-items:center;min-width:200px;width:50%;}
 footer .sa li { display: inline-block;height:auto;}
 footer form { align-items:flex-start;}
-footer form p { padding-top:20px;}
+footer form p, footer p { margin: 0 30px;padding-top:20px;}
 footer form input { border: 0;min-width:200px;width: 60%;max-width: 280px;margin-top: 15px;border-radius:15px;padding: 5px;alignSelf:center}
 footer form input[type="email"], input[type="text"] {}
 footer form input[type="submit"] { cursor: pointer;}
