@@ -91,7 +91,7 @@ footer .ss a, footer .sa a { display: inline-block;}
 footer .sa ul { align-items:center;min-width:200px;width:75%;}
 footer .sa li { display: inline-block;height:auto;}
 footer form { align-items:flex-start;}
-footer form p, footer p { margin: 0 auto 0 35px;padding-top:40px;}
+footer form p, footer p { margin: 0 0 0 35px;padding-top:40px;}
 footer form input { border: 0;min-width:200px;width: 60%;max-width: 280px;margin-top: 15px;border-radius:15px;padding: 5px;alignSelf:center}
 footer form input[type="email"], input[type="text"] {}
 footer form input[type="submit"] { cursor: pointer;}
