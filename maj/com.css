@@ -31,7 +31,7 @@ header .b { width:85%;}
 
 
 
-header, header .a ,header .b ,header ul{ display:flex;align-items:center;justify-content:space-around;flex-wrap:wrap;}
+header, header .a ,header .b ,header ul{ display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;}
 header section { float:center;height:50px;padding:2px 16px;}
 header .a { justify-content:space-between;}
 header .a, header .b { max-width:1000px;flex:1 1 auto;list-style:none;}
@@ -70,7 +70,7 @@ header nav li:hover > ul{box-shadow:10px 10px 40px rgba(0,0,0,0.5);}
 
 
 
-footer section img { height:30px;width:auto;}
+footer section img { height:50px;width:auto;}
 
 footer .sa ul, footer form input { margin: 10px auto;}
 footer section ,footer hr, footer form p{width:85%;}
@@ -88,10 +88,10 @@ footer a:hover:active { text-decoration: underline;}
 footer .ss ul { margin: 1em 0 .5em;}
 footer .ss li { display: block;}
 footer .ss a, footer .sa a { display: inline-block;}
-footer .sa ul { align-items:center;min-width:200px;width:50%;}
+footer .sa ul { align-items:center;min-width:200px;width:75%;}
 footer .sa li { display: inline-block;height:auto;}
 footer form { align-items:flex-start;}
-footer form p, footer p { margin: 0 30px;padding-top:20px;}
+footer form p, footer p { margin: 0 auto 0 35px;padding-top:40px;}
 footer form input { border: 0;min-width:200px;width: 60%;max-width: 280px;margin-top: 15px;border-radius:15px;padding: 5px;alignSelf:center}
 footer form input[type="email"], input[type="text"] {}
 footer form input[type="submit"] { cursor: pointer;}
