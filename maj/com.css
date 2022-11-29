@@ -70,7 +70,7 @@ header nav li:hover > ul{box-shadow:10px 10px 40px rgba(0,0,0,0.5);}
 
 
 
-footer section img { height:50px;width:auto;}
+footer section img { height:50px;width:auto;margin-bottom:30px;}
 
 footer .sa ul, footer form input { margin: 10px auto;}
 footer section ,footer hr, footer form p{width:85%;}
